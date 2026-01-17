@@ -1,0 +1,169 @@
+/* ===========================
+   RESET GENERAL
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #edf7ee;
+    color: #1b3d20;
+    line-height: 1.6;
+}
+
+/* ===========================
+   HEADER HERO
+=========================== */
+.hero {
+    background: url("../img/fondo.jpeg") center/cover no-repeat;
+    height: 55vh;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.overlay p {
+    font-size: 1.3rem;
+}
+
+/* ===========================
+   SECCIÓN DESCRIPCIÓN
+=========================== */
+.descripcion {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.descripcion h2 {
+    font-size: 2.2rem;
+    color: #2d6a2d;
+    margin-bottom: 1rem;
+}
+
+.descripcion p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #3a3a3a;
+    line-height: 1.7rem;
+}
+
+/* ===========================
+   ESPECIES (GRID)
+=========================== */
+.especies {
+    padding: 2rem;
+}
+
+.especies h2 {
+    text-align: center;
+    color: #2d6a2d;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* CONTENEDOR DE TARJETAS */
+.cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center; /* Centra las tarjetas */
+    padding: 1rem;
+}
+
+/* TARJETA */
+.card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 330px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    transition: 0.35s ease-in-out;
+}
+
+/* EFECTO AL PASAR MOUSE */
+.card img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px rgba(0, 150, 0, 0.4);
+}
+
+/* TÍTULO */
+.card h3 {
+    color: #2d6a2d;
+    font-size: 1.3rem;
+    margin-top: 0.7rem;
+}
+
+.card span {
+    font-size: 0.95rem;
+    color: #56815c;
+    display: block;
+}
+
+/* DESCRIPCIÓN */
+.card p {
+    color: #444;
+    margin-top: 0.6rem;
+}
+
+/* ===========================
+   FOOTER ANIMADO
+=========================== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #245d28;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+footer.active {
+    background: #2f7a34;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 700px) {
+    .overlay h1 {
+        font-size: 2.2rem;
+    }
+}
